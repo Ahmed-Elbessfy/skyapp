@@ -3,7 +3,7 @@ header {
     text-align: center;
     padding-top: 10rem;
     height: 35rem;
-    background: url('../../../img/showcase.jpg') no-repeat top center;
+    background: url('../img/showcase.jpg') no-repeat top center;
     @include prefixer(background-size, cover, ms);
   }
 

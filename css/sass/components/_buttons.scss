@@ -1,0 +1,17 @@
+.prim-btn {
+  background: $main-bg;
+  @include border(1px, #fff, solid, all);
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: darken($main-bg, 10%);
+  }
+}
+
+.special-btn {
+  /* created for accordion buttons - About page */
+  background-color: transparent;
+  color: $main-cl;
+}

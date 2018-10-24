@@ -1,0 +1,198 @@
+// Blocks
+
+.block {
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: $main-cl;
+  }
+}
+
+.block-icon {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+
+  .icon {
+    padding-top: 10px;
+  }
+}
+
+// Forms
+
+form {
+  label {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  input[type="search"] {
+    width: 80%;
+    height: 50px;
+    @include border(2px, $main-bg, solid, all);
+    padding-left: 1rem;
+    font-size: 1.3rem;
+  }
+
+  button[type="submit"].main-search {
+    background: url("../../../img/search.png");
+    height: 50px;
+    width: 53px;
+    vertical-align: top;
+  }
+}
+
+// Lists
+
+ul.list-feature {
+  width: 80%;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+
+  li {
+    font-size: 1.4rem;
+    line-height: 2;
+    @include border(0.5px, #ccc, solid, bottom);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  li:last-child {
+    border: 0;
+  }
+}
+
+ul.list-comments {
+  @extend ul.list-feature;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 1rem 0;
+
+    img {
+      width: 100%;
+      max-width: 6rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+ul.list-location {
+  li {
+    line-height: 2;
+  }
+}
+
+// Carousel
+
+.carousel {
+  margin-bottom: 2rem;
+
+  img {
+    @include border(5px, #cccccc70, solid, all);
+  }
+
+  span {
+    font-size: 3rem;
+    color: #909090;
+  }
+
+  .carousel-indicators li {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    top: 7px;
+    border-radius: 5px;
+    @include prefixer(box-shadow, 0px 0px 1px 1px $main-cl, webkit moz o ms);
+    background-color: transparent;
+
+    &.active {
+      background-color: darken($main-cl, 20%);
+    }
+  }
+}
+
+// Icons
+
+i.prim-fa {
+  width: 5rem;
+  padding: 0.95rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  color: $main-bg;
+  @include border(1px, $main-bg, solid, all);
+}
+
+// Blockquote
+
+blockquote.blockquote {
+  font-size: 2.5rem;
+  @include border(5px, solid, #fff, right);
+  padding-right: 3rem;
+
+  cite {
+    color: inherit;
+  }
+}
+
+
+// Taps
+.tabs {
+  margin: 2rem 0;
+
+  .nav-link.active {
+    @extend .active;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+
+  .tab-pane.active {
+    padding: 1rem;
+    border-radius: 0.3rem;
+  }
+}
+
+.prim-tabs {
+  .active {
+    background-color: $main-bg;
+    color: #fff;
+  }
+
+  @extend .tabs
+}
+
+.light-tabs {
+  .active {
+    background-color: $light-bg;
+    color: $main-cl;
+  }
+
+  @extend .tabs;
+}
+
+//accordion 
+
+#accordion {
+  .card {
+    margin: 0.3rem 0;
+  }
+}
+
+// uncategorized 
+
+.post {
+  // margin-top: 2.5rem;
+
+  img {
+    width: 100%;
+    max-width: 18rem;
+    margin-right: 1rem;
+    float: left;
+  }
+
+  a {
+    font-size: 120%;
+  }
+}

@@ -1,0 +1,18 @@
+.block {
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: $main-cl;
+  }
+}
+
+.block-icon {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+
+  .icon {
+    padding-top: 10px;
+  }
+}

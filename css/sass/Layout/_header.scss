@@ -1,0 +1,19 @@
+header {
+  .showcase {
+    text-align: center;
+    padding-top: 10rem;
+    height: 35rem;
+    background: url('../../../img/showcase.jpg') no-repeat top center;
+    @include prefixer(background-size, cover, ms);
+  }
+
+  h1 {
+    color: $main-bg;
+    font-weight: 400;
+  }
+
+  strong {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}

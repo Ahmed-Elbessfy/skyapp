@@ -1,0 +1,58 @@
+//helper class
+
+.prim-cl {
+  color: $main-bg !important;
+}
+
+.prim-border {
+  border-color: $main-bg !important;
+}
+
+.prim-bg {
+  background-color: $main-bg !important;
+  color: #fff !important;
+}
+
+.sec-cl {
+  color: $sec-bg !important;
+}
+
+.sec-border {
+  border-color: $sec-bg !important;
+}
+
+.sec-bg {
+  background-color: $sec-bg !important;
+  color: #fff !important;
+}
+
+.light-cl {
+  color: $light-bg !important;
+}
+
+.light-border {
+  border-color: $light-bg !important;
+}
+
+.light-bg {
+  background-color: $light-bg !important;
+  color: $main-cl !important;
+}
+
+.device {
+  margin-bottom: -2rem;
+
+  @media #{$xs-screen} {
+    margin: 2rem auto;
+  }
+}
+
+.top-pad {
+  padding-top: 7rem;
+}
+
+.card {
+  margin: 2rem 0;
+}
+
+//placeholders

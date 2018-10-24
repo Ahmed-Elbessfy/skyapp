@@ -1,0 +1,17 @@
+footer {
+  @include border(5px, $sec-bg, solid, top);
+  background: $dark-bg;
+  color: #fff;
+  min-height: 17rem;
+  padding: 2rem 0;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #fff;
+    line-height: 2rem;
+    font-size: 110%;
+  }
+}

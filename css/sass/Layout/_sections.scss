@@ -1,0 +1,11 @@
+section {
+  padding: 2rem 0;
+}
+
+.section-bt {
+  @include border(5px, $sec-bg, solid, top);
+}
+
+.section-bb {
+  @include border(5px, $sec-bg, solid, bottom);
+}
